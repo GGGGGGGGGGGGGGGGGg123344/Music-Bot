@@ -30,6 +30,11 @@ client.on('message', async msg => { // eslint-disable-line
 
 	let command = msg.content.toLowerCase().split(' ')[0];
 	command = command.slice(PREFIX.length)
+	
+	if(command === 'about')
+	{
+		message.reply("Noob!);
+        }
 
 	if (command === 'play') {
 		const voiceChannel = msg.member.voiceChannel;
